@@ -1,0 +1,218 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Common.master.cs" Inherits="Factorship_Starter_assets_Master_page_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+          
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+    <div>
+        <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand" href="index.html">
+                        <span class="sub-color">TITAN</span>
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.aspx">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.aspx">Services</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.aspx">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <!--/search-->
+                    <button id="trigger-overlay" class="searchw3-icon me-xl-4 me-lg-3" type="button"><i class="fas fa-search"></i></button>
+                    <!-- open/close -->
+                    <div class="overlay overlay-slidedown">
+                        <button type="button" class="overlay-close"><i class="fas fa-times"></i></button>
+                        <nav class="w3l-formhny">
+                            <form action="#" method="GET" class="d-sm-flex search-header">
+                                <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search" required>
+                                <button class="btn btn-style btn-secondary me-lg-3" type="submit">Search</button>
+                            </form>
+                        </nav>
+                    </div>
+                    <!--//search-->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         
+  
+        </asp:ContentPlaceHolder>
+    </div>
+        <!--/footer-9-->
+    <footer class="w3l-footer9">
+        <section class="footer-inner-main py-5">
+            <div class="container py-md-3">
+                <div class="right-side">
+                    <div class="row footer-hny-grids sub-columns">
+                        <div class="col-lg-3 sub-one-left">
+                            <h6>About </h6>
+                            <p class="footer-phny pe-lg-5">At Titan Company, we specialize in crafting high-quality watches and lifestyle products that combine precision, style, and innovation. </p>
+                            <div class="columns-2 mt-lg-5 mt-4">
+                                <ul class="social">
+                                    <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
+                                    </li>
+                                    <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a>
+                                    </li>
+                                    <li><a href="#twitter"><span class="fab fa-twitter"></span></a>
+                                    </li>
+                                    <li><a href="#google"><span class="fab fa-google-plus-g"></span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 sub-two-right">
+                            <h6>Services</h6>
+                            <ul>
+                                <li><a href="#processing"><i class="fas fa-angle-right"></i>Retail Network </a>
+                                </li>
+                                <li><a href="#research"><i class="fas fa-angle-right"></i> After-Sales Service</a>
+                                </li>
+                                <li><a href="#metal"><i class="fas fa-angle-right"></i> Customization</a>
+                                </li>
+                                <li><a href="#gas"><i class="fas fa-angle-right"></i> Warranty and Support</a>
+                                </li>
+                                <li><a href="#work"><i class="fas fa-angle-right"></i>Customer Care </a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 sub-two-right">
+                            <h6>Our Links</h6>
+                            <ul>
+
+                                <li><a href="#why"><i class="fas fa-angle-right"></i> Why us</a>
+                                </li>
+                                <li><a href="#licence"><i class="fas fa-angle-right"></i> Licensing
+                                    </a>
+                                </li>
+                                <li><a href="#log"><i class="fas fa-angle-right"></i> Offers
+                                    </a></li>
+                                <li><a href="#log"><i class="fas fa-angle-right"></i> Changelog
+                                    </a></li>
+                                <li><a href="#career"><i class="fas fa-angle-right"></i> Support</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 sub-one-left">
+                            <h6>Recent Posts </h6>
+                            <div class="row fposts-grid-inner mb-4">
+                                <div class="col-4 fposts-grid-left ps-0">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/g2.jpg" alt=" " class="img-fluid radius-image">
+                                    </a>
+                                </div>
+                                <div class="col-8 fposts-grid-right">
+                                    <h4>
+                                        <a href="#home" class="text-bl text-left">TITAN MARTIME II</a>
+                                    </h4>
+                                    <p class="time"> 11 Minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="row fposts-grid-inner mb-4">
+                                <div class="col-4 fposts-grid-left ps-0">
+                                    <a href="blog-single.html">
+                                        <img src="assets/images/g3.jpg" alt=" " class="img-fluid radius-image">
+                                    </a>
+                                </div>
+                                <div class="col-8 fposts-grid-right">
+                                    <h4>
+                                        <a href="#home" class="text-bl text-left">TITAN Grandmaster</a>
+                                    </h4>
+                                    <p class="time"> 11 Minutes ago</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="below-section mt-5">
+                    <div class="copyright-footer">
+                        <div class="columns text-left">
+                            <p>© 2021 Factorship. All rights reserved.All rights reserved.</a></p>
+                        </div>
+                        <ul class="footer-w3list text-right">
+                            <li><a href="#url">Privacy Policy</a>
+                            </li>
+                            <li><a href="#url">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Js scripts -->
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+        <!-- //move top -->
+    </footer>
+    <!--//footer-9 -->
+
+  </form>     
+</body>
+</html>
